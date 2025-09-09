@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audiobook Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .player {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    .cover {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 15px 0 5px;
+    }
+
+    .controls {
+      margin-top: 20px;
+    }
+
+    button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .progress {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="player">
+    <img src="cover.jpg" alt="Audiobook Cover" class="cover">
+    <h2>The Great Adventure</h2>
+    <p>By John Doe</p>
+
+    <div class="controls">
+      <button id="playPauseBtn">Play</button>
+    </div>
+
+    <div class="progress" id="progressText">00:00 / 00:00</div>
